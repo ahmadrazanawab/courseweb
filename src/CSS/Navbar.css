@@ -5,10 +5,13 @@
     list-style: none;
     box-sizing: border-box;
 }
+
+/* Navbar Start CSS*/
 nav{
     background: #0082e6;
     height: 80px;
     width: 100%;
+    position: fixed;
 }
 label.logo{
     color: white;
@@ -90,3 +93,289 @@ a.active,a:hover{
         /* top: 80px; */
     }
 }
+/* End Navbar CSS*/
+
+/* Start Hero Section CSS */
+#hero-section{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    margin: 3px 200px;
+    /* position: relative; */
+  }
+  #hero-section::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url('../assist/hero-img.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.9;
+  }
+#hero-section .hero-h{
+    font-size: 3rem;
+    font-family: sans-serif;
+    margin-bottom: 2px;
+    color: black;
+}
+#hero-section .hero-p{
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#hero-section .hero-btn{
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin-top: 4px;
+    border: 1px solid orange;
+    border-radius: 4px;
+    padding: 6px 10px 6px 10px;
+    background-color: rgb(224, 163, 48);
+    width: 100px;
+    cursor: pointer;
+}
+#hero-section .hero-btn:hover{
+    transform: scale(0.9);
+}
+
+@media (max-width:880px) {
+    #hero-section{
+        height: 60vh;
+        margin: 3px 100px;
+      }
+      #hero-section .hero-h{
+        font-size: 2rem;
+    }
+}
+@media (max-width:880px) {
+    #hero-section{
+        height: 60vh;
+        margin: 3px 50px;
+      }
+      #hero-section .hero-h{
+        font-size: 1.3rem;
+    }
+    #hero-section .hero-p{
+        font-size: 0.8rem;
+    }
+}
+/* End Hero Section CSS */
+
+/* Start About  Section CSS */
+
+.about-div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #fff;
+    min-height: 50vh;
+    margin-bottom: 20px;
+}
+.about-container{
+    margin: 30px 10px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.about-h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+.about-p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+}
+.about-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 2px 5px 3px 2px wheat;
+}
+.about-h4{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 6px 0px 6px 0px;
+}
+.about-box-p{
+    font-size: 1rem;
+    margin: 6px 0px 6px 0px;
+}
+.about-btn{
+    outline: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: rgb(32, 17, 17);
+    color: white;
+    padding: 6px 10px 6px 10px;
+    margin: 6px 0px 6px 0px;
+    cursor: pointer;
+}
+.about-btn:hover{
+    transform: scale(0.9);
+}
+
+@media (max-width:500px){
+    .about-div{
+        text-align: center;
+        /* margin: 0px 4px 0px 4px; */
+    }
+    .about-p{
+        margin: 0px 4px 0px 4px;
+    }
+}
+/* End About Section CSS */
+
+
+/* Start Course CSS */
+
+#courses{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: darkslateblue;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.courses-h{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+.courses-btn{
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid orange;
+    background-color: orange;
+    padding: 12px 14px 12px 14px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width:850px){
+    .courses-h{
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: 2px;
+    }
+    .courses-btn{
+        padding: 10px 12px 10px 12px;
+        border-radius: 4px;
+        margin-top: 4px;
+    }
+}
+@media (max-width:530px){
+    #courses{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .courses-h{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 4px;
+    }
+    .courses-btn{
+        border-radius: 4px;
+        margin-top: 4px;
+    }
+}
+/* End Course CSS */
+
+/* Start Key CSS */
+.key-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.key-h4{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 10px 0px 30px 0px;
+}
+.key-p{
+    font-size: 1.2rem;
+}
+.key-div{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 30px;
+}
+.key-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 260px;
+    height: 180px;
+    margin: 4px;
+    box-shadow: 1px 1px 1px 1px wheat;
+}
+.key-h{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+@media (max-width:560px) {
+    .key-container{
+        text-align: center;
+    }
+    .key-p{
+        margin: 0px 4px 0px 4px;
+    }
+}
+/* End Key CSS */
+
+/* Start Footer CSS */
+footer{
+  background-color: rgb(12, 25, 122);
+  min-height: 40vh;  
+}
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4px 10px 4px 10px;
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin: 10px 10px;
+    width: 300px;
+}
+.footer-h{
+    margin: 4px 0px 4px 0px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.footer-p{
+    margin: 6px 0px 4px 0px;
+    font-size: 1rem;
+}
+/* End Footer CSS */
