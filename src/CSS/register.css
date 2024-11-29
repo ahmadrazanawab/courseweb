@@ -39,11 +39,11 @@ select{
     align-items: center;
     align-items: center;
 }
-.form-div-ep #email{
+#email{
     width: 430px;
     margin-right: 4px;
 }
-.form-div-ep #number{
+#number{
     width: 430px;
     margin-right: 10px;
 }
@@ -52,7 +52,7 @@ select{
     margin-right: 4px;
 }
 #profile{
-    min-width: 430px;
+    width: 430px;
     margin-right: 4px;
     border: 2px solid gray;
 }
@@ -83,6 +83,13 @@ label{
     font-weight: 600;
     font-family: serif;
 }
+@media (max-width:1506px){
+    .form-div-ep{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+}
 
 @media (max-width:840px){
     .register-form{
@@ -93,4 +100,37 @@ label{
         width: 80%;
     }
 }
-/* End Contact Form CSS */
+@media (max-width:591px){
+    #email{
+        width: 300px;
+        margin-right: 4px;
+    }
+     #number{
+        width: 300px;
+        margin-right: 10px;
+    }
+    #course{
+        width: 300px;
+        margin-right: 4px;
+    }
+    #profile{
+        width: 300px;
+        margin-right: 4px;
+        border: 2px solid gray;
+    }
+}
+@media (max-width:425px){
+    #email{
+        width: 100%;
+    }
+     #number{
+        width: 100%;
+    }
+    #course{
+        width: 100%;
+    }
+    #profile{
+        width: 100px;
+    }
+}
+/* End Register Form CSS */
