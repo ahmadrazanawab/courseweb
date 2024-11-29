@@ -349,7 +349,80 @@ a.active,a:hover{
     }
 }
 /* End Key CSS */
+/* Start Contact Form CSS */
+.contact-div{
+    display: flex;
+    background-color: #ddd;
+    padding: 20px 0px 20px 0px;
+    justify-content: center;
+}
+.contact-form{
+    margin-top: 100px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 1px 1px white;
+    padding: 15px 20px 15px 20px;
+    width: 40%;
+    border-radius: 5px;
+}
+.contact-form input{
+    padding: 12px 10px 12px 10px;
+    margin: 10px 0px 10px 0px;
+    outline: none;
+    border-radius: 4px;
+}
+select{
+    padding: 12px 10px 12px 10px;
+    outline: none;
+    border-radius: 4px;
+}
+.contact-h{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 4px;
+    background-color: rgb(70, 70, 222);
+    border-radius: 2px;
+}
+label{
+    font-size: 1.2rem;
+}
+.contact-h4{
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.contact-div-btn{
+    display: flex;
+    justify-content: center;
+    margin: 4px 0px 4px 0px;
 
+}
+.contact-btn{
+    outline: none;
+    cursor: pointer;
+    padding: 6px 14px 6px 14px;
+    font-size: 1rem;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 4px;
+    width: 40%;
+    font-weight: 600;
+    font-family: serif;
+}
+
+@media (max-width:840px){
+    .contact-form{
+        margin-top: 80px;
+        width: 80%;
+    }
+    .contact-btn{
+        width: 80%;
+    }
+}
+/* End Contact Form CSS */
 /* Start Footer CSS */
 footer{
   background-color: rgb(12, 25, 122);
