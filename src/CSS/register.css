@@ -1,0 +1,96 @@
+/* Start Contact Form CSS */
+.register-div{
+    display: flex;
+    background-color: #ddd;
+    padding: 20px 0px 20px 0px;
+    justify-content: center;
+}
+.register-form{
+    margin-top: 100px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 1px 1px white;
+    padding: 15px 20px 15px 20px;
+    width: 60%;
+    border-radius: 5px;
+}
+.register-form input{
+    padding: 12px 10px 12px 10px;
+    margin: 10px 0px 10px 0px;
+    outline: none;
+    border-radius: 4px;
+}
+select{
+    padding: 12px 10px 12px 10px;
+    outline: none;
+    border-radius: 4px;
+}
+.register-h{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 4px;
+    background-color: rgb(70, 70, 222);
+    border-radius: 2px;
+}
+.form-div-ep{
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+.form-div-ep #email{
+    width: 430px;
+    margin-right: 4px;
+}
+.form-div-ep #number{
+    width: 430px;
+    margin-right: 10px;
+}
+#course{
+    width: 430px;
+    margin-right: 4px;
+}
+#profile{
+    min-width: 430px;
+    margin-right: 4px;
+    border: 2px solid gray;
+}
+label{
+    font-size: 1.2rem;
+}
+.register-h4{
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.register-div-btn{
+    display: flex;
+    justify-content: center;
+    margin: 4px 0px 4px 0px;
+
+}
+.register-btn{
+    outline: none;
+    cursor: pointer;
+    padding: 6px 14px 6px 14px;
+    font-size: 1rem;
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 4px;
+    width: 40%;
+    font-weight: 600;
+    font-family: serif;
+}
+
+@media (max-width:840px){
+    .register-form{
+        margin-top: 80px;
+        width: 80%;
+    }
+    .register-btn{
+        width: 80%;
+    }
+}
+/* End Contact Form CSS */

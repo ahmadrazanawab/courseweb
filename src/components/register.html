@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Navbar.css">
+    <link rel="stylesheet" href="../CSS/register.css">
     <title>Document</title>
 </head>
 <body>
@@ -19,39 +20,50 @@
                 <li><a href="./clinical-research-course.html#about">About</a></li>
                 <li><a href="./clinical-research-course.html#service">Services</a></li>
                 <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./register.html">Register</a></li>
+                <li><a href="#register">Register</a></li>
             </ul>
         </nav>
 </header>
-    <section id="contact">
-        <div class="contact-div">
-            <form action="" class="contact-form">
-                <div class="contact-h"><h4 class="contact-h4">Contact Us</h4></div>
+    <section id="register">
+        <div class="register-h"><h4 class="register-h4">Contact Us</h4></div>
+        <div class="register-div">
+            <form action="" class="register-form">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name">
-                <label for="email">Email</label>
-                <input type="email" name="name" id="email" placeholder="Enter your Email">
-                <label for="number">Phone</label>
-                <input type="number" name="number" id="number" placeholder="Enter your number">
+                <div class="form-div-ep">
+                <label for="email">Email
+                <input  type="email" name="name" id="email" placeholder="Enter your Email">
+                </label>
+                <label for="number">Phone
+                <input  type="number" name="number" id="number" placeholder="Enter your number">
+                </label>
+                </div>
+                <div class="form-div-ep">
+                    <label for="course">Course
+                    <select name="course" id="course">
+                    <option value="1">full Stack Seveloper</option>
+                    <option value="2">Clinic Research Course</option>
+                    <option value="3">Medical Coding Course</option>
+                    <option value="4">Software Testing Course</option>
+                    <option value="5">Software Developer Course</option>
+                   </select>
+                    </label>
+                    <label for="profile">Profile Photo
+                        <input type="file" id="profile" name="file" onChange={handleChange} accept=".pdf, .docx, .png, .jpg" required/>
+                    </label>
+                </div>
                 <label for="state">State</label>
                 <select name="state" id="state">
                     <option value="1">Maharashtra</option>
                     <option value="2">Bihar</option>
                     <option value="3">UP</option>
                 </select>
-                <label for="course">Course</label>
-                <select name="course" id="course">
-                    <option value="1">full Stack Seveloper</option>
-                    <option value="2">Clinic Research Course</option>
-                    <option value="3">Medical Coding Course</option>
-                    <option value="4">Software Testing Course</option>
-                    <option value="5">Software Developer Course</option>
-                </select>
+                
     
                 <label for="msg">Message</label>
                 <input type="text" name="msg" id="msg" placeholder="Enter your message">
-                <div class="contact-div-btn">
-                    <button class="contact-btn">Send Us</button>
+                <div class="register-div-btn">
+                    <button class="register-btn">Submit</button>
                 </div>
             </form>
         </div>
